@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Untuk Anindita — Sebuah Buku Kecil</title>
+    <meta
+      name="description"
+      content="Sebuah halaman kecil berisi buku 3D dengan foto dan pesan, dibuat khusus untuk Anindita."
+    />
+    <meta property="og:title" content="Untuk Anindita — Sebuah Buku Kecil" />
+    <meta
+      property="og:description"
+      content="Buku kenangan 3D dengan foto dan pesan, dibuat khusus untuk Anindita."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Italianno&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="romance-root">
+      <div class="ambient" aria-hidden="true">
+        <span class="aurora aurora-1"></span>
+        <span class="aurora aurora-2"></span>
+        <span class="aurora aurora-3"></span>
+        <span class="grain"></span>
+        <span class="vignette"></span>
+      </div>
+
+      <main class="stage-wrap">
+        <!-- INTRO -->
+        <section class="intro" id="intro">
+          <p class="eyebrow"><i></i>A little something<i></i></p>
+          <h1 class="intro-title">
+            <span>untuk</span>
+            <span class="script">Anindita</span>
+          </h1>
+          <p class="rule"><i></i>&#9825;<i></i></p>
+          <p class="intro-text">special fot anindita.</p>
+          <button type="button" class="open-btn" id="btn-open">Open &#8599;</button>
+          <p class="footnote">made with love</p>
+        </section>
+
+        <!-- BUKU 3D -->
+        <section class="book-scene" id="book" hidden>
+          <p class="book-greeting" id="greeting"></p>
+          <p class="book-hint" id="hint"></p>
+
+          <div class="book-stage" id="stage">
+            <div class="book" id="bookEl">
+              <div class="case case-right">
+                <span class="case-grain"></span>
+                <span class="book-spine"></span>
+              </div>
+              <div class="case case-left" id="caseLeft">
+                <span class="case-grain"></span>
+              </div>
+              <!-- lembar dibuat oleh script.js -->
+            </div>
+            <span class="book-floor-shadow" id="floor"></span>
+          </div>
+
+          <div class="book-controls">
+            <button type="button" class="book-btn" id="btn-prev">&#8592; sebelumnya</button>
+            <button type="button" class="book-btn book-btn-primary" id="btn-next">
+              berikutnya &#8594;
+            </button>
+          </div>
+        </section>
+
+        <!-- PENUTUP -->
+        <section class="ending" id="ending" hidden>
+          <p class="eyebrow"><i></i>the end<i></i></p>
+          <h2 class="ending-title script">I love you</h2>
+          <p class="rule"><i></i>&#9825;<i></i></p>
+          <p class="ending-name">Anindita</p>
+          <button type="button" class="open-btn" id="btn-again">baca lagi</button>
+        </section>
+      </main>
+
+      <audio id="music" src="music.mp3" loop preload="auto" playsinline></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
